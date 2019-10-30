@@ -9,6 +9,7 @@ import Utility.Driver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.jcp.xml.dsig.internal.SignerOutputStream;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 
@@ -28,6 +29,7 @@ public class LoginPageStep {
         loginPage.email.sendKeys(email);
         loginPage.password.sendKeys(password);
         loginPage.signInButton.click();
+        System.out.println("Oh MY test passed");
     }
 
     @Then("Registered user homepage should be displayed")
