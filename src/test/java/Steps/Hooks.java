@@ -18,6 +18,7 @@ public class Hooks {
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         // you can also add maximize screen here
         Driver.getDriver().manage().window().maximize();
+        System.out.println("Hoooks");
     }
 
 
